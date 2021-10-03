@@ -11,7 +11,7 @@ public class LoginPage {
 	private By emailId = By.id("email");
 	private By password = By.id("passwd");
 	private By signInButton = By.id("SubmitLogin");
-	private By forgotPwdLink = By.linkText("Forgot your password?111");
+	private By forgotPwdLink = By.linkText("Forgot your password?11");
 
 	// 2. Constructor of the page class:
 	public LoginPage(WebDriver driver) {
@@ -40,12 +40,12 @@ public class LoginPage {
 		driver.findElement(signInButton).click();
 	}
 
-	public AccountsPage doLogin(String un, String pwd) {
+	public void doLogin(String un, String pwd) {
 		System.out.println("login with: " + un + " and " + pwd);
 		driver.findElement(emailId).sendKeys(un);
 		driver.findElement(password).sendKeys(pwd);
 		driver.findElement(signInButton).click();
-		return new AccountsPage(driver);
+		//return new AccountsPage(driver);
 	}
 
 

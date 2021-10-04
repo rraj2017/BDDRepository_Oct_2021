@@ -6,6 +6,7 @@ public class BrowserSupport {
 		// TODO Auto-generated method stub
         System.out.println("chrome browser");
         System.out.println("firefox browser");
+        System.out.println("Safari browser");
 	}
 
 }
